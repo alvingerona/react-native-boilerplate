@@ -1,7 +1,8 @@
-import { createAppContainer, createStackNavigator } from 'react-navigation'
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
-import ExampleScreen from 'App/Containers/Example/ExampleScreen'
-import SplashScreen from 'App/Containers/SplashScreen/SplashScreen'
+import ExampleScreen from 'App/Containers/Example/ExampleScreen';
+import SplashScreen from 'App/Containers/SplashScreen/SplashScreen';
 
 /**
  * The root screen contains the application's navigation.
@@ -22,7 +23,7 @@ const StackNavigator = createStackNavigator(
     initialRouteName: 'SplashScreen',
     // See https://reactnavigation.org/docs/en/stack-navigator.html#stacknavigatorconfig
     headerMode: 'none',
-  }
-)
+  },
+);
 
-export default createAppContainer(StackNavigator)
+export default createAppContainer(StackNavigator);
